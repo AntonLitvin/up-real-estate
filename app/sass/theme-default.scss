@@ -1,0 +1,254 @@
+@import "vars";
+
+p {
+	color: $text;
+}
+
+.top-social {
+	a {
+		&:hover .fa {
+			color: $accent;
+		}
+	}
+}
+
+.login-wrapper:hover {
+	a {
+		color: $accent;
+	}
+	.fa {
+		color: $accent;
+	}
+}
+
+.header-contacts-item {
+	.contacts-icon {
+		border: 3px solid $accent;
+	}
+}
+
+.header-nav {
+	background-color: $dark-grey;
+}
+
+.header-nav-toggle {
+	background-color: $dark-grey;
+}
+
+.header-nav-toggle.on {
+	background-color: $accent;
+}
+
+.header-nav-list {
+	a {
+		&:after {
+			background-color: rgba($accent, 0.1);
+		}
+	}
+}
+
+.contacts-icon {
+	.fa {
+		color: $dark-grey;
+	}
+}
+
+.nav-item {
+	border-top: 3px solid $dark-grey;
+	border-bottom: 3px solid $dark-grey;
+	&:hover {
+		border-top: 3px solid $accent;
+		border-bottom: 3px solid $accent;
+	}
+}
+
+.header-submenu {
+	background-color: $dark-grey;
+	border-top: 3px solid $accent;
+	a {
+		&:hover {
+			color: $accent;
+		}
+		&:active {
+			color: darken($accent, 5%);
+		}
+	}
+
+}
+
+.submit-object {
+	a {
+		background-color: $accent2;
+		&:hover {
+			background-color: lighten($accent2, 7%);
+		}
+		&:active {
+			background-color: darken($accent2, 5%);
+		}
+	}
+}
+
+.slogan-text {
+	border-left: 3px solid $accent;
+}
+
+.find-home-wrapper {
+	.h2 {
+		background-color: $dark-grey;
+	}
+}
+
+.find-form {
+	.submit-btn {
+		background-color: $accent2;
+		&:hover {
+			background-color: lighten($accent2, 7%);
+		}
+		&:active {
+			background-color: darken($accent2, 5%);
+		}
+	}
+	.ui-icon {
+		background-color: $accent;
+	}
+}
+
+.find-now-btn {
+	background-color: $accent2;
+		&:hover {
+			background-color: lighten($accent2, 7%);
+		}
+		&:active {
+			background-color: darken($accent2, 5%);
+		}
+	}
+
+.ui-selectmenu-menu {
+	.ui-widget.ui-widget-content {
+		.ui-state-active {
+			color: $accent;
+		}
+	}
+}
+
+.slider-wrapper {
+	.ui-widget-header {
+		background-color: $accent;
+	}
+	.ui-slider-handle {
+		background-color: $accent2;
+	}
+	.ui-state-active {
+		background-color: darken($accent2, 10%);
+	}
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	background-color: $accent2;
+	&:hover {
+		background-color: $dark-grey;
+	}
+}
+
+.latest-prop-item {
+	.favorite-heart {
+		.fa {
+			color: $dark-grey;
+		}
+		&:hover {
+			.fa {
+				color: $accent;
+			}
+		}
+	}
+	.links-wrapper {
+		a {
+			color: #fff;
+			background-color: $accent;
+			&:hover {
+				background-color: darken($accent, 7%);
+			}
+		}
+	}
+	.features-block {
+		.fa {
+			color: $dark-grey;
+		}
+	}
+	.description-wrapper {
+		border-bottom: 2px solid $accent;
+	}
+	.description-block {
+		a {
+			&:hover {
+				color: $accent2;
+			}
+		}
+	}
+	.share-wrapper {
+		a {
+			&:hover {
+				color: $accent2;
+			}
+		}
+	}
+	.price {
+		color: $accent2;
+	}
+}
+
+.area-icon {
+	position: relative;
+	&::after {
+		box-shadow: -3px 3px 0px  $dark-grey; 
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.nav-item {
+		border-top: none;
+		border-bottom: none;
+		&:hover {
+			border-top: none;
+			border-bottom: none;
+			& > a {
+				color: $accent;
+			}
+		}
+	}
+
+	.submit-object {
+		a {
+			background-color: $accent;
+			&:hover {
+				background-color: lighten($accent, 7%);
+			}
+			&:active {
+				background-color: darken($accent, 5%);
+			}
+		}
+	}
+
+	.header-submenu {
+		background-color: darken($dark-grey, 5%);
+		border-top: none;
+	}
+
+	.latest-prop-item {
+		.features-block {
+			.fa {
+				color: $accent;
+			}
+		}
+	}
+
+	.area-icon {
+		&::after {
+			box-shadow: -3px 3px 0px  $accent; 
+		}
+	}
+
+}

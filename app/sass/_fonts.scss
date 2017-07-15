@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("LatoRegular", "../fonts/LatoRegular/LatoRegular");
+@include font-face("LatoBold", "../fonts/LatoBold/LatoBold", bold);
+@include font-face("LatoLight", "../fonts/LatoLight/LatoLight", 300);
+@include font-face("DINCondensed-Bold", "../fonts/DINCondensed-Bold/DINCondensed-Bold");
