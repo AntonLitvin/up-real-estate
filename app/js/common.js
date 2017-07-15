@@ -202,14 +202,14 @@ $('.latest-prop-item .img-overlay').on('click', function(e){
 
 //Theme color changer
 $('.theme-default').on('click', function(){
-	$('#color-styles').attr('href', 'css/theme-default.css')
-})
+	$('#color-styles').attr('href', 'css/theme-default.css');
+});
 $('.theme-red').on('click', function(){
-	$('#color-styles').attr('href', 'css/red-theme.css')
-})
+	$('#color-styles').attr('href', 'css/red-theme.css');
+});
 $('.theme-blue').on('click', function(){
-	$('#color-styles').attr('href', 'css/blue-theme.css')
-})
+	$('#color-styles').attr('href', 'css/blue-theme.css');
+});
 
 
 });
