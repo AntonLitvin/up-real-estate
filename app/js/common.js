@@ -135,22 +135,33 @@ $('.slider-wrapper input').keypress(function(event){
 
 //Open close header form on
 $('.find-now-btn').on('click', function(){
-	$('.find-home-wrapper').slideToggle();
-	$(this).toggleClass('on');
+
+	if ($(this).hasClass('on')) {
+		$(this).removeClass('on')
+		.html('Find Now');
+		$('.find-home-wrapper').slideToggle(400);
+		return false;
+	}
+
+	$('.find-home-wrapper').slideToggle(400);
+	$(this).html('Hide Form').addClass('on');
 	return false;
 });
 
 $('.main-form-btn').on('click', function(){
 	if($(window).width() <= 480) {
-		$('.find-home-wrapper ').slideToggle();
-		$('.find-now-btn').removeClass('on');
+		$('.find-home-wrapper').slideToggle(400);
+		if ($('.find-now-btn').hasClass('on')) {
+			$('.find-now-btn').removeClass('on')
+			.html('Find Now');
+		}
 	}
 	return false;
 });
 
 $(window).resize(function(){
 	if($(window).width() > 480) {
-		$('.find-home-wrapper ').removeAttr('style');
+		$('.find-home-wrapper').removeAttr('style');
 	}
 });
 
