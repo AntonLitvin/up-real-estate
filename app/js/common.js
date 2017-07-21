@@ -200,15 +200,15 @@ heightses();
 
 
 //fix hover overlay on windows phone
-$('.latest-prop-item .img-wrapper').on('click', function(){
-	$(this).find('.img-overlay').removeAttr('style')
-	.css({'opacity':'1', 'transform':'scale(1)'});
-});
+// $('.latest-prop-item .img-wrapper').on('click', function(){
+// 	$(this).find('.img-overlay').removeAttr('style')
+// 	.css({'opacity':'1', 'transform':'scale(1)'});
+// });
 
-$('.latest-prop-item .img-overlay').on('click', function(e){
-	e.stopPropagation();
-	$(this).removeAttr('style');
-});
+// $('.latest-prop-item .img-overlay').on('click', function(e){
+// 	e.stopPropagation();
+// 	$(this).removeAttr('style');
+// });
 
 
 //Theme color changer
